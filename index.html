@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru">
-<source src="audio/stoni.mp3" type="audio/mpeg">
-<img src="media/images.jpg">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Нажми</title>
+    <title>Звук и картинка</title>
     <style>
         body {
             margin: 0;
@@ -22,9 +20,11 @@
         }
     </style>
 </head>
-<body> <!-- Замените на свою картинку -->
-    
-    <audio id="audio" loop> <!-- Замените на свой аудиофайл -->
+<body>
+    <img src="media/image.jpg"> <!-- Замените на свою картинку -->
+
+    <audio id="audio" loop>
+        <source src="audio/stoni.mp3" type="audio/mpeg"> <!-- Замените на свой аудиофайл -->
     </audio>
 
     <script>
