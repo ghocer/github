@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Неизвестная ошибка</title>
+    <title>Неизвестная ошибка</title> <!-- Новый заголовок вкладки -->
     <style>
         body {
             margin: 0;
@@ -88,11 +88,11 @@
             });
 
             // Открываем рикролл в новой вкладке
-            window.open("https://youtube.com/channel/UC6Vt7XW36AIKXnEv3pg9eQA?si=7py2YOnEbrgm7Q4X", "_blank");
+            window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ", "_blank");
 
         }, { once: true }); // Событие срабатывает только один раз
 
-        // Предупреждение при попытке закрыть вкладку или перезагрузить страницу
+        // Постоянное предупреждение о закрытии страницы (даже до клика)
         window.addEventListener("beforeunload", function (event) {
             event.preventDefault();
             event.returnValue = "Вы уверены, что хотите покинуть эту страницу?";
